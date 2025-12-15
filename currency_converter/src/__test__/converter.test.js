@@ -1,19 +1,16 @@
-import { convertCurrency } from "../src/commponets/currencySector";
+import { CurrencyConverter } from './commponets/currencyConverter';
 
 describe("Currency Conversion", () => {
   test("converts amount using the given exchange rate", () => {
-    const result = convertCurrency(100, 150);
-    expect(result).toBe(15000); // 100 * 150
+    expect(convertCurrency(100, 150)).toBe(15000);
   });
 
   test("returns 0 when amount is 0", () => {
-    const result = convertCurrency(0, 150);
-    expect(result).toBe(0);
+    expect(convertCurrency(0, 150)).toBe(0);
   });
 
   test("handles decimal amounts", () => {
-    const result = convertCurrency(12.5, 150);
-    expect(result).toBeCloseTo(1875);
+    expect(convertCurrency(12.5, 150)).toBeCloseTo(1875);
   });
 
   test("throws an error for negative amounts", () => {

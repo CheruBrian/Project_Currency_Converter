@@ -1,6 +1,6 @@
-// src/App.jsx
+// currency_converter/src/App.jsx 
 import React from 'react';
-import CurrencyConverter from './components/CurrencyConverter';
+import { CurrencyConverter } from './commponets/currencyConverter';
 
 function App() {
   return (
