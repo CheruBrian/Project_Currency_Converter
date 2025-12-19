@@ -1,16 +1,47 @@
-# React + Vite
+Currency Converter Application
+Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a Currency Converter web application built using React, JavaScript, HTML, CSS, and optionally Tailwind CSS for styling. The application allows users to convert amounts between different currencies using real-time exchange rates fetched from a public currency API.
 
-Currently, two official plugins are available:
+The goal of this project is to simulate a real-world frontend development workflow by integrating external APIs, managing application state, handling user input, and building a responsive and user-friendly interface. It also serves as practical experience in testing, deployment, and UI enhancement.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
+Core Functionality
 
-## React Compiler
+Convert amounts between two selected currencies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Fetch real-time exchange rates from a public currency API
 
-## Expanding the ESLint configuration
+Display the converted amount instantly
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Show current exchange rate for the selected currency pair
+
+User Interface
+
+Responsive layout for desktop, tablet, and mobile devices
+
+Clean and intuitive UI built with Tailwind CSS
+
+Clear input fields and dropdowns for currency selection
+
+Error Handling
+
+Handles network errors and invalid API responses
+
+Displays user-friendly error messages
+
+Prevents invalid conversions (e.g. empty or negative input)
+
+Technologies Used
+
+React (Vite setup)
+
+JavaScript (ES6+)
+
+HTML5
+
+CSS3 / Tailwind CSS
+
+Exchange Rate API
+
+Jest & React Testing Library (for testing)
